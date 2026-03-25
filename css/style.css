@@ -51,13 +51,13 @@ a {
     box-shadow: -1px 1px 2px 0px #cbc0c0;
 }
 .logo {
-        font-size: 35px;
+    font-size: 26px;
     font-weight: bold;
     color: var(--main-color);
 }
 .logo span {
-    color: blue;
-    font-size: 40px;
+    color:#f39c12;
+    font-size: 26px;
 }
 .nav-links {
     position: relative;
@@ -201,18 +201,21 @@ section.hero-content .hero-buttons .outline:hover {
 
 .services .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 420px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .services .services-grid .service-card {
     background: #f8fafc;
     padding: 20px;
+    overflow: hidden;
     border-radius: var(--min-radius);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--main-transition);
+}
+.services .services-grid .service-card:hover {
+    transform: translateY(-5px);
 }
 /* end services  */
 /* start about  */
@@ -236,34 +239,60 @@ font-size:18px;
 /* end about  */
 /* start footer  */
 footer {
-    background: #0f172a;
-    color: white;
+    background: #111;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 40px 0 20px;
 }
 footer .container {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.foot-links {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    align-items: center;
-}
-.foot-links a {
-    display: block;
-    color: var(--main-color);
-    font-size: 20px;
-    padding: 10px 20px;
+.foot-links li {
+    margin-bottom: 10px;
 }
 
-footer .copy {
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 18px;
-    color: cornsilk;
+.foot-links a {
+    text-decoration:none;
+    color:#ccc;
+    transition:0.3s;
+}
+.foot-links a:hover{
+    color:#f39c12;
+}
+
+/* السوشيال */
+.icons{
+    list-style:none;
+}
+
+.icons li{
+    margin-bottom:10px;
+}
+
+.icons a{
+    text-decoration:none;
+    color:#ccc;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:0.3s;
+}
+
+.icons a:hover{
+    color:#f39c12;
+}
+
+/* خط الحقوق */
+.copy{
+    text-align:center;
+    margin-top:30px;
+    border-top:1px solid #333;
+    padding-top:15px;
+    font-size:14px;
+    color:#aaa;
 }
 /* end footer  */
