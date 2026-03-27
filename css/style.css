@@ -5,7 +5,7 @@
 }
 :root {
     --main-color: #18b2e6;
-    --hover-color: #81dee6;
+    --hover-color: #f39c12;
     --all-color: #93c1fa;
     --main-transition: 0.4s;
     --min-radius: 6px;
@@ -187,8 +187,8 @@ section.hero-content .hero-buttons .primary:hover {
     font-weight: bold;
 }
 section.hero-content .hero-buttons .outline:hover {
-    background: var(--all-color);
-    border-color: white;
+    background: var(--hover-color);
+    border-color: white; 
     border-width: 1px;
     border-style: solid;
 }
@@ -205,7 +205,7 @@ section.hero-content .hero-buttons .outline:hover {
     gap: 20px;
     padding: 20px;
 }
-
+/* start card */
 .services .services-grid .service-card {
     background: #f8fafc;
     padding: 20px;
@@ -217,6 +217,7 @@ section.hero-content .hero-buttons .outline:hover {
 .services .services-grid .service-card:hover {
     transform: translateY(-5px);
 }
+/* end card */
 /* end services  */
 /* start about  */
 .about{
