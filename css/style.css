@@ -102,7 +102,8 @@ a {
     transition: var(--main-transition);
 }
 .navbar .btn-nav:hover {
-    color: var(--hover-color);
+    background-color: var(--hover-color);
+    color: black;
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar .btn-nav {
@@ -216,6 +217,32 @@ section.hero-content .hero-buttons .outline:hover {
 }
 .services .services-grid .service-card:hover {
     transform: translateY(-5px);
+}
+.service-card h3{
+    text-align: center;
+    padding: 0 10px 10px;
+    font-size: 20px;
+    color: var(--hover-color);
+}
+.service-card p{
+    line-height: 1.6;
+    font-weight: bold;
+}
+.service-card a {
+    padding: 10px 15px;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    background: var(--all-color);
+    border-radius: 10px;
+    color: var(--hover-color);
+    font-size: 18px;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.service-card a:hover {
+    background: var(--hover-color);
+    color: black;
 }
 /* end card */
 /* end services  */
